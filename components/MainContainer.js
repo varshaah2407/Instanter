@@ -61,19 +61,13 @@ export default function MainContainer() {
                     null
                 ]
             })}
-            // tabBarOptions={{
-            //     activeTintColor: 'tomato',
-            //     inactiveTintColor: 'grey',
-            //     labelStyle: { paddingBottom: 10, fontSize: 10},
-            //     style: {padding: 10, height: 70}
-            // }}
             
             >
 
                 <Tab.Screen name={homeName} component={HomeScreen}/>
                 <Tab.Screen name={MapName} component={Map}/>
-                <Tab.Screen name={AboutName} component={Newsletter}/>
-                <Tab.Screen name={NewsName} component={AboutPage}/>
+                <Tab.Screen name={AboutName} component={AboutPage}/>
+                <Tab.Screen name={NewsName} component={Newsletter}/>
                 <Tab.Screen name={ProfileName} component={ProfilePage}/>
 
             </Tab.Navigator>
