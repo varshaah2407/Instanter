@@ -3,7 +3,7 @@ import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'; 
 import Ionicons from 'react-native-vector-icons/Ionicons'
-
+import Header from './Header';
 //screens
 import HomeScreen from './screens/HomeScreen';
 import Map from './screens/Map';
@@ -23,10 +23,12 @@ const Tab = createBottomTabNavigator();
 export default function MainContainer() {
     return (
         <NavigationContainer>
+        <Header />
             <Tab.Navigator
             initialRouteName={homeName}
             screenOptions={({route}) => ({
                 tabBarIcon: ({focused,color, size}) => {
+                    
                     let iconName;
                     let rn = route.name;
 
@@ -48,8 +50,13 @@ export default function MainContainer() {
 
                     return <Ionicons name={iconName} size={size} color={color} />
                 },
+                headerShown: false,
+              
                 "tabBarActiveTintColor": "tomato",
                 "tabBarInactiveTintColor": "grey",
+                // "tabBarInactiveBackgroundColor": "",
+                // "tabBarActiveBackgroundColor": "",
+
                 "tabBarLabelStyle": {
                     "paddingBottom": 10,
                     "fontSize": 10

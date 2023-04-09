@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { StyleSheet, View, Text, Dimensions, ScrollView } from 'react-native';
+import Header from '../Header';
 
 export default function AboutPage({navigation}) {
     return (
