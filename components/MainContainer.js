@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Dropdown } from 'react-native-element-dropdown';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'; 
@@ -10,6 +11,7 @@ import Map from './screens/Map';
 import Newsletter from './screens/Newsletter';
 import AboutPage from './screens/AboutPage';
 import ProfilePage from './screens/ProfilePage';
+import { Dimensions } from 'react-native';
 
 //screen names  
 const homeName = 'Home';
@@ -23,7 +25,7 @@ const Tab = createBottomTabNavigator();
 export default function MainContainer() {
     return (
         <NavigationContainer>
-        <Header />
+        {/* <Header /> */}
             <Tab.Navigator
             initialRouteName={homeName}
             screenOptions={({route}) => ({

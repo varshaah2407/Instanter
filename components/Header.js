@@ -1,6 +1,8 @@
 import React from "react";
 import AppIcon from '../assets/appIcon.png'
-import {View,Text, StyleSheet,Image} from 'react-native';
+import {View,Text, StyleSheet,Image,Dimensions} from 'react-native';
+
+const {height,width} = Dimensions.get('window');
 
 const Header = () => {
     return (
@@ -19,7 +21,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: 'white',
         fontSize: 30,
-        marginHorizontal: 40,
+        marginHorizontal: width/7,
     },
     innerText: {
         fontFamily: 'Quicksand',
@@ -28,14 +30,16 @@ const styles = StyleSheet.create({
     },
     container: {
         marginTop: 30,
+      
         flexDirection: 'row',
+        width: width,
         alignItems: 'center',
-        height: 70,
+        height: height/10,
         backgroundColor: '#474747',
     },
     icon: {
-        width: 60,
-        height: 70,
+        width: width/6,
+        height: height/10,
     },
     titleText: {
         flex: 1,

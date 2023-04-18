@@ -1,11 +1,12 @@
 import * as React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import Header from '../Header';
-
+import DropdownComponent from '../DropDown';
 export default function ProfilePage({navigation}) {
     return (
      
         <View style={styles.container}>
+        <DropdownComponent />
             <Text onPress={() => navigation.navigate('Home')}>
                 Profile page Screen
             </Text>
