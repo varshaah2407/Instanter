@@ -1,9 +1,14 @@
+import {View} from 'react-native';
 import * as React from 'react';
+
+
 import MainContainer from './components/MainContainer';
 
-function App() {
+const App = () => {
   return (
+
     <MainContainer />
+
   );
 }
 

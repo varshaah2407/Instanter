@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 import * as React from "react";
 import { StyleSheet, View, Text, Dimensions, ScrollView } from "react-native";
+=======
+import * as React from 'react';
+import { StyleSheet, View, Text, Dimensions, ScrollView } from 'react-native';
+import Header from '../Header';
+>>>>>>> cbc5e49741be55f3829a1f43b0853c33fb82e837
 
 export default function AboutPage({ navigation }) {
   return (
