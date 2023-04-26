@@ -42,6 +42,7 @@ export default function MainContainer() {
               iconName = focused ? "person" : "person-outline";
             }
 
+<<<<<<< HEAD
             return <Ionicons name={iconName} size={size} color={color} />;
           },
           tabBarActiveTintColor: "white",
@@ -74,4 +75,33 @@ export default function MainContainer() {
       </Tab.Navigator>
     </NavigationContainer>
   );
+=======
+                    return <Ionicons name={iconName} size={size} color={color} />
+                },
+                "tabBarActiveTintColor": "tomato",
+                "tabBarInactiveTintColor": "grey",
+                "tabBarLabelStyle": {
+                    "paddingBottom": 10,
+                    "fontSize": 10
+                },
+                "tabBarStyle": [
+                    {
+                    "display": "flex"
+                    },
+                    null
+                ]
+            })}
+            
+            >
+
+                <Tab.Screen name={homeName} component={HomeScreen}/>
+                <Tab.Screen name={MapName} component={Map}/>
+                <Tab.Screen name={AboutName} component={AboutPage}/>
+                <Tab.Screen name={NewsName} component={Newsletter}/>
+                <Tab.Screen name={ProfileName} component={ProfilePage}/>
+
+            </Tab.Navigator>
+        </NavigationContainer>
+    );
+>>>>>>> 552717bfaeac870ce574e731fb060da338b31afe
 }
