@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@mapbox/mapbox-sdk": "^0.15.1",
+    "expo-speech": "^11.1.1"
+  }
+}
