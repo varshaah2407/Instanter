@@ -42,8 +42,7 @@ It takes input like type of disaster, number of people affected, and voice messa
 
 ## Screenshots
 
-<img align="left" src="assets/otp.jpg" alt="Register/Login page" width="200"/><br>
-
+<img align="left" src="frontend/assets/otp.jpg" alt="Register/Login page" width="200"/><br>
 <img align="left" src="frontend/assets/home.jpg" alt="Report page" width="200"/>
 <img align="left" src="frontend/assets/map.jpg" alt="Location page" width="200"/>
 <img align="left" src="frontend/assets/news.jpg" alt="Newsletter page" width="200"/>
